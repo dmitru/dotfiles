@@ -113,7 +113,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-PS1='\e[33;1m\u@\h: \e[31m\W\e[0m\$ '
+export PS1='\[\e[1;35m\]\u\[\e[m\]@\[\e[1;32m\]\h\[\e[m\] \[\e[1;33m\]\w\[\e[m\]\$ '
 export GREP_OPTIONS='--color=auto'
 if [[ $(uname) == Darwin* ]]; then
   alias ls='gls --color=auto'
