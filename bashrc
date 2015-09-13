@@ -127,3 +127,15 @@ export LC_ALL="en_US.UTF-8"
 HISTCONTROL=ignoreboth
 HISTFILESIZE=100000
 HISTSIZE=100000
+
+export WORKON_HOME=$HOME/.virtualenvs
+# makes pip detect an active virtualenv and install to it
+export PIP_RESPECT_VIRTUALENV=true
+
+source ~/.bashrc_local
+
+
+# Aliases
+alias dps="docker ps"
+alias drun="docker run"
+
